@@ -927,7 +927,7 @@ function ctype(present_array) {
     let present_div_product = present_div_products[j];
     let present_div_product_thumbnail = bought_json[present_div_product]["thumbnail"];
 
-    products_div_elements += `<a href=checkmart products.html?value=` + present_div_product + `"><img class="direct_image" src="` + present_div_product_thumbnail + `" alt=""  loading="lazy"></a>`;
+    products_div_elements += `<a href="checkmart products.html?value=` + present_div_product + `"><img class="direct_image" src="` + present_div_product_thumbnail + `" alt=""  loading="lazy"></a>`;
 
   }
 
@@ -941,7 +941,7 @@ function ctype(present_array) {
   let createDiv = document.createElement('div');
   createDiv.innerHTML = `<section class="todays-deals">
     <h1 style="display: inline-block;" class="tdh1">` + present_div_name + `</h1>
-    <a href="checkmart%20products.html?value=` + present_div_link + `" style="color:#007084; text-decoration: none; display: inline;" class="tda">See all details</a>
+    <a href="` + present_div_link + `" style="color:#007084; text-decoration: none; display: inline;" class="tda">See all details</a>
     <div class="deals-container">` + products_div_elements + `</div>
     </section>`;
 
