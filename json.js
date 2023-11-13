@@ -941,7 +941,7 @@ function ctype(present_array) {
   let createDiv = document.createElement('div');
   createDiv.innerHTML = `<section class="todays-deals">
     <h1 style="display: inline-block;" class="tdh1">` + present_div_name + `</h1>
-    <a href="` + present_div_link + `" style="color:#007084; text-decoration: none; display: inline;" class="tda">See all details</a>
+    <a href="checkmart%20products.html?value=` + present_div_link + `" style="color:#007084; text-decoration: none; display: inline;" class="tda">See all details</a>
     <div class="deals-container">` + products_div_elements + `</div>
     </section>`;
 
